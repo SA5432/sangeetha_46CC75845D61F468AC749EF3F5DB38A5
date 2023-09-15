@@ -1,10 +1,11 @@
-#1.1 Implememt a recursive to calculate the given factorial number
-def fact(n):
-  if n==0:
-    return 1
-  else:
-    return n*fact(n-1)
-print("\n factorial of a number") 
-num=int(input("enter a non-negative integer:"))
-factorial=fact(num)
-print("the factorial of",num, "is",factorial) 
+#LeapLeap year
+def isLeapYear(year):
+ if(year % 4==0 and year % 100 !=0) or year % 400==0:
+  return True
+ else:
+  return False
+Year=int(input("Enter a year:"))
+if isLeapYear(Year):
+  print('{} is a leap year.'.format(Year))
+else: 
+  print('{} is not a leap year.'.format (Year))
